@@ -34,7 +34,7 @@ module objects {
         }
     }
 
-    class Student extends Person {
+   export class Student extends Person {
         //private instant variables
         private _studentID: string;
 
@@ -70,19 +70,4 @@ let student: objects.Student;
 
 student = new objects.Student(30, "David", "D123456789");
 student.saysHello();
-student.studies();"use strict";
-//let myGlobalVariable=0;
-//self executinh anonymous function
-//IIFE - Imediately invoked function expression
-(function(){
-
-    let myFunctionalVariable = 0;
-    function Start(){
-        let myLocalvariable = 0;
-       // console.log("App started---"+ myFunctionalVariable);
-        console.log('App started---${myFunctionalVariable}');
-    }
-
-    window.addEventListener("load",Start);
-
-})();
+student.studies();
